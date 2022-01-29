@@ -1,10 +1,17 @@
-import { ExperiencesContainer } from "./Experiences"
+import { Cards } from "../cards";
+import {
+  ExperiencesContainer,
+  JobsContainer,
+  ExperienceText,
+} from "./Experiences";
 
-export function Experiences(){
-    return(
-        <ExperiencesContainer>
-        
-            <h1 >teste</h1>
-        </ExperiencesContainer>
-    )
+export function Experiences() {
+  return (
+    <ExperiencesContainer>
+      <ExperienceText>Experiences</ExperienceText>
+      <JobsContainer>
+        <Cards alt="nao sei ainda" />
+      </JobsContainer>
+    </ExperiencesContainer>
+  );
 }
