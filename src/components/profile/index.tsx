@@ -71,9 +71,9 @@ export function Profile() {
             number: {
               density: {
                 enable: true,
-                area: 30,
+                area: 100,
               },
-              value: 2,
+              value: 10,
             },
             opacity: {
               value: 0.5,

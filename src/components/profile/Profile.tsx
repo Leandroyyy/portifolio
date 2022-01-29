@@ -24,44 +24,47 @@ export const Name = styled.h1`
     font-size:5rem;
 
     margin-bottom: 4rem;
+    white-space:nowrap;
 
     @media screen and (max-width:750px){
-        font-size:4rem;
+        font-size:4.5rem;
     }
 
     @media screen and (max-width:580px){
-        font-size:3rem;
+        font-size:3.8rem;
     }
 
     @media screen and (max-width:480px){
-        font-size:2rem;
+        font-size:2.8rem;
     }
 
-    @media screen and (max-width:300px){
-        font-size:1.5rem;
+    @media screen and (max-width:340px){
+        font-size:2.3rem;
     }
 `
 
 export const Text = styled.p`
     color:white;
     font-size:2rem;
+    white-space: nowrap;
 
     margin-bottom:4rem;
 
     @media screen and (max-width:750px){
-        font-size:1.5rem;
+        font-size:1.7rem;
     }
 
-    @media screen and (max-width:580px){
+    @media screen and (max-width:600px){
+        font-size:1.4rem;
+    }
+
+    @media screen and (max-width:500px){
+        font-size:1.2rem;
+    }
+
+    @media screen and (max-width:420px){
+        white-space: normal;
         font-size:1rem;
-    }
-
-    @media screen and (max-width:480px){
-        font-size:0.7rem;
-    }
-
-    @media screen and (max-width:300px){
-        font-size:0.5rem;
     }
 `
 
@@ -90,15 +93,6 @@ export const Contact = styled.a`
     @media screen and (max-width:580px){
         font-size:1rem;
         padding:0.8rem 1.7rem;
-    }
-
-    @media screen and (max-width:480px){
-        font-size:0.7rem;
-        padding:0.5rem 1.3rem;
-    }
-
-    @media screen and (max-width:300px){
-        font-size:0.5rem;
     }
 
 `
