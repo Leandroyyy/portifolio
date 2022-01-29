@@ -1,6 +1,6 @@
 import { Images, ProjectsBox, ProjectsContainer, Title } from "./Projects";
 import devFinance from '../../assets/img/devFinance.png'
-import {Data} from './projectsData.js'
+import {Data} from './projectsData'
 
 
 type ImagesProps = {
