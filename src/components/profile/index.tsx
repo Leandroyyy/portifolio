@@ -73,7 +73,7 @@ export function Profile() {
                 enable: true,
                 area: 30,
               },
-              value: 3,
+              value: 2,
             },
             opacity: {
               value: 0.5,
