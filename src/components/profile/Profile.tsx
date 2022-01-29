@@ -20,7 +20,6 @@ export const InfoContainer = styled.div`
     
     animation: fadeInAnimation ease 5s;
     animation-iteration-count: 1;
-    animation-fill-mode: forwards;
 
     @keyframes fadeInAnimation {
         0% {
@@ -29,7 +28,7 @@ export const InfoContainer = styled.div`
         100% {
             opacity: 1;
          }
-        }
+    }
 `
 
 export const Name = styled.h1`
