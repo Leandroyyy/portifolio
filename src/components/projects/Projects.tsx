@@ -7,9 +7,6 @@ export const ProjectsContainer = styled.section`
     display:flex;
     align-items:center;
     justify-content:center;
-
-   
-
 `
 
 export const ProjectsBox = styled.div`
@@ -23,14 +20,12 @@ export const ProjectsBox = styled.div`
     flex-direction: column;
     align-items:center;
     justify-content:center;
-
 `
 
 export const Title = styled.h1`
 
     font-size:2rem;
     margin-bottom:2rem;
-
 `
 
 export const Images = styled.img`
@@ -38,5 +33,23 @@ export const Images = styled.img`
     width:60vw;
     height:60vh;
     border-radius:1rem;
+`
+
+export const ImagesContainer = styled.div`
+
+    display: flex;
+`
+
+export const ButtonImages = styled.a`
+
+    font-size:2rem;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    
+    &:hover{
+        cursor:pointer;
+        color:#4169e1;
+    }
 
 `
