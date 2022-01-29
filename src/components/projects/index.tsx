@@ -1,5 +1,5 @@
 import { Images, ProjectsBox, ProjectsContainer, Title } from "./Projects";
-import DevFinance from '../../assets/img/devFinance.png'
+//import DevFinance from '../../assets/img/devFinance.png'
 //import {Data} from './projectsData'
 
 
@@ -18,9 +18,11 @@ export function Projects(){
 
             <Title>Projects</Title>
 
-            {/*realizar uma troca de pagina mostrando imagem dos meus projetos*/}
+            {/*realizar uma troca de pagina mostrando imagem dos meus projetos
+         <Images src={DevFinance} />    
+        */}
 
-            <Images src={DevFinance} />
+           
 
             <div>
                 {/*Data.map((data: ImagesProps, index:number) => {
