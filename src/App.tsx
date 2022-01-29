@@ -4,6 +4,7 @@ import './App.css'
 import { Profile } from "./components/profile"
 import { Experiences } from "./components/experiences"
 import { Cards } from "./components/cards"
+import { Projects } from "./components/projects"
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
       <Header/>
       <Profile/>
       <Experiences/> 
+      <Projects/>
     </>
   )
 }

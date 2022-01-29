@@ -9,6 +9,7 @@ export const ProfileContainer = styled.section`
     align-items:center;
     height:100vh;
     overflow-y:hidden;
+
 `
 
 export const InfoContainer = styled.div`
@@ -16,7 +17,19 @@ export const InfoContainer = styled.div`
     flex-direction:column;
     justify-content: center;
     align-items:center;
-    margin:auto;
+    
+    animation: fadeInAnimation ease 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+    @keyframes fadeInAnimation {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+         }
+        }
 `
 
 export const Name = styled.h1`
