@@ -17,8 +17,6 @@ type ImagesProps = {
 
 export function Projects(){
 
-    let number = 2;
-
     const [image, setImage] = useState<number>(0);
 
     //if you want to add more, you need to add more data in projects as the array

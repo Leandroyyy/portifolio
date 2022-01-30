@@ -21,6 +21,10 @@ export const ProjectsBox = styled.div`
     flex-direction: column;
     align-items:center;
     justify-content:center;
+
+    @media screen and (max-width:600px){
+        width:85vw;
+    }
 `
 
 export const Title = styled.h1`
@@ -41,7 +45,11 @@ export const Images = styled.img`
     background: linear-gradient(58deg, rgba(2,0,36,1) 23%, rgba(90,90,203,1) 100%);
 
     @media only screen and (max-width:600px){
-        width:40vw;
+        width:60vw;
+    }
+
+    @media only screen and (max-width:400px){
+        width:60vw;
     }
 `
 
@@ -70,6 +78,10 @@ export const ButtonImages = styled.a`
     @media only screen and (max-width:500px){
         font-size:1.5rem;
 
+    }
+
+    @media only screen and (max-width:500px){
+        margin:0.5rem;
     }
 `
 

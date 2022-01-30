@@ -12,13 +12,13 @@ type Header = {
 export function Header(){
 
     const [enableBar, setEnableBar] = useState<boolean>();
-    const [displayBar , setDisplayBar] = useState<string>('-1000px');
+    const [displayBar , setDisplayBar] = useState<string>('-10000px');
     const [fix, setFix] = useState<string>('');
 
     function showMenu(e :React.FormEvent<HTMLAnchorElement>){
         e.preventDefault()
         enableBar ? setEnableBar(false) : setEnableBar(true)
-        enableBar ? setDisplayBar('-1000px') : setDisplayBar('5.1rem')
+        enableBar ? setDisplayBar('-10000px') : setDisplayBar('5.1rem')
         enableBar ? setFix('') : setFix('fixed')
     }
 
