@@ -8,19 +8,12 @@ import Traveller from "../../assets/img/traveller.svg"
 import {Data} from './projectsData'
 import {FaArrowCircleLeft, FaArrowCircleRight} from 'react-icons/fa'
 
-type ImagesProps = {
-    id:number,
-    title:string,
-    subTitle:string,
-    image?:any,
-}
-
 export function Projects(){
 
     const [image, setImage] = useState<number>(0);
 
     //if you want to add more, you need to add more data in projects as the array
-    const projectsImages : Array<any> = [Mind,Hawker,Traveller,Moveit,DevFinances]
+    const projectsImages : Array<string> = [Mind,Hawker,Traveller,Moveit,DevFinances]
 
     function AdvanceImages(){
         setImage(image+1)
@@ -48,16 +41,15 @@ export function Projects(){
             <ProjectName>{Data[image].title}</ProjectName>
 
             <ImagesContainer>
-                <ButtonImages onClick={BackImages}><FaArrowCircleLeft/></ButtonImages>
+                <ButtonImages color={Data[image].color} onClick={BackImages}><FaArrowCircleLeft/></ButtonImages>
 
                 <Images src={projectsImages[image]} alt={Data[image].subTitle}  />
 
-                <ButtonImages onClick={AdvanceImages}><FaArrowCircleRight/></ButtonImages>
+                <ButtonImages color={Data[image].color} onClick={AdvanceImages}><FaArrowCircleRight/></ButtonImages>
 
             </ImagesContainer>
-
          
-            <More href="">Know More</More>
+            <More color={Data[image].color} href="">Know More</More>
         </ProjectsBox>
     
     </ProjectsContainer>

@@ -1,5 +1,9 @@
 import styled from 'styled-components'
 
+type StylesProps = {
+    color:any;
+}
+
 export const ProjectsContainer = styled.section`
 
     width:100vw;
@@ -68,7 +72,7 @@ export const ButtonImages = styled.a`
 
     &:hover{
         cursor:pointer;
-        color:#4169e1;
+        color:${(props:StylesProps) => props.color};
     }
 
     @media only screen and (max-width:600px){
@@ -77,7 +81,6 @@ export const ButtonImages = styled.a`
 
     @media only screen and (max-width:500px){
         font-size:1.5rem;
-
     }
 
     @media only screen and (max-width:500px){
@@ -91,14 +94,15 @@ export const More = styled.a`
     text-decoration:none;
     color:#fff;
     border-radius:2rem;
-    background-color:#4169e1;
     padding:0.5rem 1rem;
+    background-color:${(props:StylesProps) => props.color};
     margin-top:0.8rem;
     border:solid;
+    transition: 0.3s;
 
     &:hover{
         background-color:#fff;
-        color:#4169e1;
+        color:${(props:StylesProps) => props.color};
     }
 
 `

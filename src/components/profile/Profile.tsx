@@ -18,7 +18,7 @@ export const InfoContainer = styled.div`
     justify-content: center;
     align-items:center;
     
-    animation: fadeInAnimation ease 5s;
+    animation: fadeInAnimation ease 3s;
     animation-iteration-count: 1;
 
     @keyframes fadeInAnimation {
