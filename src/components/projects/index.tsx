@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Images, ProjectsBox, ProjectsContainer, Title, ImagesContainer, ButtonImages, More, ProjectName} from "./Projects";
 import DevFinances from "../../assets/img/devFinances.svg"
-//import Mind from "../../assets/img/mind.svg"
+import Mind from "../../assets/img/mind.svg"
 import Moveit from "../../assets/img/moveit.svg"
 import Hawker from "../../assets/img/hawker.svg"
 import Traveller from "../../assets/img/traveller.svg"
@@ -20,7 +20,7 @@ export function Projects(){
     const [image, setImage] = useState<number>(0);
 
     //if you want to add more, you need to add more data in projects as the array
-    const projectsImages : Array<any> = [Hawker,Traveller,Moveit,DevFinances]
+    const projectsImages : Array<any> = [Mind,Hawker,Traveller,Moveit,DevFinances]
 
     function AdvanceImages(){
         setImage(image+1)
