@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Images, ProjectsBox, ProjectsContainer, Title, ImagesContainer, ButtonImages, More, ProjectName} from "./Projects";
 import DevFinances from "../../assets/img/devFinances.svg"
 import Mind from "../../assets/img/mind.svg"
@@ -5,7 +6,6 @@ import Moveit from "../../assets/img/moveit.svg"
 import Hawker from "../../assets/img/hawker.svg"
 import Traveller from "../../assets/img/traveller.svg"
 import {Data} from './projectsData'
-import { useState } from "react";
 import {FaArrowCircleLeft, FaArrowCircleRight} from 'react-icons/fa'
 
 type ImagesProps = {
