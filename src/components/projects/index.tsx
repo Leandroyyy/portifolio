@@ -1,9 +1,9 @@
-import { Images, ProjectsBox, ProjectsContainer, Title, ImagesContainer, ButtonImages} from "./Projects";
-import DevFinances from "../../assets/img/devFinances.png"
-import Mind from "../../assets/img/mind.png"
-import Moveit from "../../assets/img/moveit.png"
-import Hawker from "../../assets/img/hawker.png"
-import Traveller from "../../assets/img/traveller.png"
+import { Images, ProjectsBox, ProjectsContainer, Title, ImagesContainer, ButtonImages, More, ProjectName} from "./Projects";
+import DevFinances from "../../assets/img/devFinances.svg"
+import Mind from "../../assets/img/mind.svg"
+import Moveit from "../../assets/img/moveit.svg"
+import Hawker from "../../assets/img/hawker.svg"
+import Traveller from "../../assets/img/traveller.svg"
 import {Data} from './projectsData'
 import { useState } from "react";
 import {FaArrowCircleLeft, FaArrowCircleRight} from 'react-icons/fa'
@@ -21,7 +21,8 @@ export function Projects(){
 
     const [image, setImage] = useState<number>(0);
 
-    const projectsImages : Array<any> = [DevFinances,Mind,Moveit,Hawker,Traveller]
+    //if you want to add more, you need to add more data in projects as the array
+    const projectsImages : Array<any> = [Mind,Hawker,Traveller,Moveit,DevFinances]
 
     function AdvanceImages(){
         setImage(image+1)
@@ -43,17 +44,22 @@ export function Projects(){
 
     <ProjectsContainer>
     
-        <ProjectsBox>
+        <Title>Projects</Title>
 
-            <Title>Projects</Title>
+        <ProjectsBox>
+            <ProjectName>{Data[image].title}</ProjectName>
 
             <ImagesContainer>
                 <ButtonImages onClick={BackImages}><FaArrowCircleLeft/></ButtonImages>
 
-                <Images src={projectsImages[image]} alt={Data[0].subTitle}  />
+                <Images src={projectsImages[image]} alt={Data[image].subTitle}  />
 
                 <ButtonImages onClick={AdvanceImages}><FaArrowCircleRight/></ButtonImages>
+
             </ImagesContainer>
+
+         
+            <More href="">Know More</More>
         </ProjectsBox>
     
     </ProjectsContainer>

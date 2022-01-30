@@ -13,24 +13,28 @@ export const Data : Array<ImagesProps>= [
         title:"Mind",
         subTitle:"Mind",
     },
+
     {
         id:2,
-        title:"Move-It",
-        subTitle:"Move-It",
-    },
-    {
-        id:3,
-        title:"Dev Finances",
-        subTitle:"Dev Finances",
-    },
-    {
-        id:4,
         title:"Hawker",
         subTitle:"Hawker",
     },
+
     {
-        id:5,
+        id:3,
         title:"Traveller",
         subTitle:"Traveller",
+    },
+
+    {
+        id:4,
+        title:"Move-It",
+        subTitle:"Move-It",
+    },
+    
+    {
+        id:5,
+        title:"Dev Finances",
+        subTitle:"Dev Finances",
     },
 ]
