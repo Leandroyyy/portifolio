@@ -5,7 +5,7 @@ import { Profile } from "./components/profile"
 import { Experiences } from "./components/experiences"
 import { Cards } from "./components/cards"
 import { Projects } from "./components/projects"
-import { GraduationContainer } from "./components/graduation/Graduation"
+import { Graduation } from "./components/graduation"
 
 function App() {
 
@@ -15,7 +15,7 @@ function App() {
       <Profile/>
       <Experiences/> 
       <Projects/>
-      <GraduationContainer/>
+      <Graduation/>
     </>
   )
 }
