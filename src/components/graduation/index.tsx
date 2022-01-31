@@ -18,9 +18,9 @@ import {
   Vue,
 } from "./Graduation";
 import Fiap from "../../../assets/img/Fiap.png";
-import Python from "../../../assets/img/python.svg"
-import Alura from "../../../assets/img/alura.png"
-import Java from "../../../assets/img/java.svg"
+import Python from '../../../assets/img/python.svg'
+import Alura from '../../../assets/img/alura.png'
+import Java from '../../../assets/img/java.svg'
 
 export function Graduation() {
   return (
@@ -30,7 +30,7 @@ export function Graduation() {
       <CardsOrganize>
         <CardsContainer>
           <Date>2021 - 2022</Date>
-          <FiapImg src={Alura} alt="Fiap" />
+          <FiapImg src={Fiap} alt="Fiap" />
         </CardsContainer>
 
         <CardsContainer>
