@@ -184,7 +184,6 @@ export const Technologys = styled.div`
     @media only screen and (max-width:1000px){
         width:70vw;
         padding:0 1rem;
-
     }
 
     @media only screen and (max-width:800px){
