@@ -167,58 +167,109 @@ export const Technologys = styled.div`
     background-color:#fff;
     border-radius: 1rem;
     height:8vh;
-    width:50vw;
+    width:60vw;
     padding:0 2rem;
 
     display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(1vw, 1fr));
-    grid-gap:4rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap:3vw;
     align-items:center;
     justify-content:center;
 
-    @media only screen and (max-width:800px){
-        height:20vh;
-        grid-template-columns: repeat(auto-fit, minmax(8vw, 1fr));
-        grid-gap:1.5rem;
+    @media only screen and (max-width:1400px){
+        grid-gap:1vw;
+        padding:0 1rem;
+    }
+
+    @media only screen and (max-width:1000px){
+        width:70vw;
         padding:0 1rem;
 
+    }
+
+    @media only screen and (max-width:800px){
+        height:20vh;
+        width:50vw;
+        padding:0 1rem;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 ` 
 
 export const Typescript = styled(SiTypescript)`
     font-size:3rem;
     color:rgba(47,114,188);
+    margin-left:1rem;
 
+    @media only screen and (max-width:500px){
+        font-size:2rem;
+        margin-left:0.5rem;
+    }
 `
 
 export const Javascript = styled(SiJavascript)`
     font-size:3rem;
     color:rgba(234,212,28);
+    margin-left:1rem;
+
+    @media only screen and (max-width:500px){
+        font-size:2rem;
+        margin-left:0.5rem;
+    }
 `
 
 
 export const Angular = styled(SiAngular)`
     font-size:3rem;
     color:#ff0339;
+    margin-left:1rem;
+
+    @media only screen and (max-width:500px){
+        font-size:2rem;
+        margin-left:0.5rem;
+    }
 `
 
 export const NodeJs = styled(SiNodedotjs)`
     font-size:3rem;
     color:#0a9605;
+    margin-left:1rem;
+
+    @media only screen and (max-width:500px){
+        font-size:2rem;
+        margin-left:0.5rem;
+    }
 `
 
 export const React = styled(SiReact)`
     font-size:3rem;
     color:#58edf8;
+    margin-left:1rem;
+
+    @media only screen and (max-width:500px){
+        font-size:2rem;
+        margin-left:0.5rem;
+    }
 `
 
 export const Vue = styled(SiVuedotjs)`
     font-size:3rem;
     color:rgba(65,184,131);
+    margin-left:1rem;
+
+    @media only screen and (max-width:500px){
+        font-size:2rem;
+        margin-left:0.5rem;
+    }
 `
 
 export const Icons = styled.img`
     width:3rem;
+    margin-left:1rem;
+
+    @media only screen and (max-width:500px){
+        width:2rem;
+        margin-left:0.5rem;
+    }
 `
 
 export const Certificate = styled(GiBrain)`
