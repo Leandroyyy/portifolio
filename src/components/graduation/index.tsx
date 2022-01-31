@@ -41,7 +41,7 @@ export function Graduation() {
         
       </CardsOrganize>
 
-      <TechnologysTitle>Tecnologys that i know</TechnologysTitle>
+      <TechnologysTitle>Technologys that i know</TechnologysTitle>
       <Technologys>
           <Javascript/>
           <Typescript/>

@@ -88,6 +88,10 @@ export const FiapImg = styled.img`
         margin-bottom:1rem;
     }
 
+    @media only screen and (max-width:600px){
+        width:30vw;
+    }
+
 `
 
 export const AluraImg = styled.img`
