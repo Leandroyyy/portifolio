@@ -1,5 +1,7 @@
 import styled from 'styled-components'
 import {SiJavascript, SiTypescript, SiAngular, SiNodedotjs, SiReact, SiVuedotjs} from 'react-icons/si'
+import {GiBrain} from 'react-icons/gi'
+
 
 export const GraduationContainer = styled.section`
 
@@ -50,14 +52,13 @@ export const CardsContainer = styled.div`
 
     background-color: #fff;
     height:40vh;
-    width:20vw;
+    width:30vw;
     border-radius:1rem;
     display:flex;
     flex-direction: column;
     justify-content:center;
     align-items:center;
     margin:0 3rem;
-    padding:0rem 0;
 
     &:hover{
         transform: scale(1.02);
@@ -81,7 +82,7 @@ export const CardsContainer = styled.div`
 `
 
 export const FiapImg = styled.img`
-    width:12vw;
+    width:15vw;
 
     @media only screen and (max-width:800px){
         width:20vw;
@@ -92,15 +93,27 @@ export const FiapImg = styled.img`
         width:30vw;
     }
 
+    @media only screen and (max-width:400px){
+        width:40vw;
+    }
+
 `
 
 export const AluraImg = styled.img`
-    width:10vw;
+    width:12vw;
     margin:0.5rem 0;
     border-radius:1rem;
 
     @media only screen and (max-width:800px){
-        width:15vw;
+        width:18vw;
+    }
+
+    @media only screen and (max-width:600px){
+        width:26vw;
+    }
+
+    @media only screen and (max-width:400px){
+        width:36vw;
     }
 
 `
@@ -137,9 +150,11 @@ export const ClickMe = styled.a`
         border-style:solid
     }
 
-    @media only screen and (max-width:500px){
-        font-size:0.8rem;
+    @media only screen and (max-width:600px){
+        font-size:0.7rem;
     }
+
+   
 `
 
 export const TechnologysTitle = styled.h1`
@@ -153,15 +168,27 @@ export const Technologys = styled.div`
     border-radius: 1rem;
     height:8vh;
     width:50vw;
+    padding:0 2rem;
 
-    display:flex;
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(1vw, 1fr));
+    grid-gap:4rem;
     align-items:center;
-    justify-content:space-around;
+    justify-content:center;
+
+    @media only screen and (max-width:800px){
+        height:20vh;
+        grid-template-columns: repeat(auto-fit, minmax(8vw, 1fr));
+        grid-gap:1.5rem;
+        padding:0 1rem;
+
+    }
 ` 
 
 export const Typescript = styled(SiTypescript)`
     font-size:3rem;
     color:rgba(47,114,188);
+
 `
 
 export const Javascript = styled(SiJavascript)`
@@ -192,4 +219,9 @@ export const Vue = styled(SiVuedotjs)`
 
 export const Icons = styled.img`
     width:3rem;
+`
+
+export const Certificate = styled(GiBrain)`
+    margin-left:0.5rem;
+    color:#fff;
 `

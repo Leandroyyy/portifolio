@@ -3,6 +3,7 @@ import {
   Angular,
   CardsContainer,
   CardsOrganize,
+  Certificate,
   ClickMe,
   Date,
   FiapImg,
@@ -25,7 +26,7 @@ import Java from '../../../assets/img/java.svg'
 export function Graduation() {
   return (
     <GraduationContainer>
-      <GraduationText>Graduation</GraduationText>
+      <GraduationText>Graduation <Certificate/></GraduationText>
 
       <CardsOrganize>
         <CardsContainer>
