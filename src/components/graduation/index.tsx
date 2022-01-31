@@ -17,7 +17,7 @@ import {
   Typescript,
   Vue,
 } from "./Graduation";
-import Fiap from "../../assets/img/fiap.png";
+import Fiap from "../../assets/img/Fiap.png";
 import Python from '../../assets/img/python.svg'
 import Alura from '../../assets/img/alura.png'
 import Java from '../../assets/img/java.svg'
