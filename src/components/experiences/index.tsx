@@ -8,7 +8,7 @@ import {
   ClickMe,
 } from "./Experiences";
 
-import Foursys from "../../assets/img/foursys.png";
+import Foursys from "../../../assets/img/foursys.png";
 import { AiOutlineExperiment } from "react-icons/ai";
 import { FiMoreVertical } from "react-icons/fi";
 
