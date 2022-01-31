@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import {MdComputer} from 'react-icons/md'
 
 type StylesProps = {
     color:any;
@@ -37,6 +38,9 @@ export const Title = styled.h1`
     margin-top:2rem;
     margin-bottom:2rem;
     color:#fff;
+    display:flex;
+    align-items:center;
+
 `
 
 export const Images = styled.img`
@@ -99,6 +103,8 @@ export const More = styled.a`
     margin-top:0.8rem;
     border:solid;
     transition: 0.3s;
+    display:flex;
+    align-items:center;
 
     &:hover{
         background-color:#fff;
@@ -114,4 +120,9 @@ export const ProjectName = styled.h2`
     @media only screen and (max-width:600px){
         font-size:2rem;
     }
+`
+
+export const Computer = styled(MdComputer)`
+    color:#fff;
+    margin-left:1rem;
 `

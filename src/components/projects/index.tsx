@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Images, ProjectsBox, ProjectsContainer, Title, ImagesContainer, ButtonImages, More, ProjectName} from "./Projects";
+import { Images, ProjectsBox, ProjectsContainer, Title, ImagesContainer, ButtonImages, More, ProjectName, Computer} from "./Projects";
 import DevFinances from "../../assets/img/devFinances.svg"
 import Mind from "../../assets/img/Mind.svg"
 import Moveit from "../../assets/img/moveit.svg"
@@ -7,6 +7,7 @@ import Hawker from "../../assets/img/hawker.svg"
 import Traveller from "../../assets/img/traveller.svg"
 import {Data} from './projectsData'
 import {FaArrowCircleLeft, FaArrowCircleRight} from 'react-icons/fa'
+import {FiMoreVertical} from 'react-icons/fi'
 
 export function Projects(){
 
@@ -35,7 +36,7 @@ export function Projects(){
 
     <ProjectsContainer>
     
-        <Title>Projects</Title>
+        <Title>Projects <Computer/></Title>
 
         <ProjectsBox>
             <ProjectName>{Data[image].title}</ProjectName>
@@ -49,7 +50,7 @@ export function Projects(){
 
             </ImagesContainer>
          
-            <More color={Data[image].color} href="">Know More</More>
+            <More color={Data[image].color} href="">Know More <FiMoreVertical/></More>
         </ProjectsBox>
     
     </ProjectsContainer>
