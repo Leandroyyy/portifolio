@@ -15,6 +15,10 @@ export const GraduationContainer = styled.section`
         color:white;
     }
 
+    @media only screen and (max-width:800px){
+        height:150vh;
+    }
+
 `
 
 export const GraduationText = styled.h1`
@@ -25,15 +29,20 @@ export const GraduationText = styled.h1`
     display: flex;
     align-items:center;
 
-    @media screen and (max-width:750px){
+    @media screen and (max-width:800px){
         font-size:3rem;
     }
 `
 
 export const CardsOrganize = styled.div`
 
-    display: flex;  
+    display: flex; 
+    justify-content:center;
+    align-items:center;
 
+    @media only screen and (max-width:800px){
+        flex-direction:column;
+    }
 
 `
 
@@ -56,7 +65,9 @@ export const CardsContainer = styled.div`
     }
 
     @media only screen and (max-width:800px){
-        width:60vw;
+        width:40vw;
+        height:35vh;
+        margin:0 0 1rem 0;
     }
 
     @media only screen and (max-width:600px){
@@ -69,11 +80,23 @@ export const CardsContainer = styled.div`
 
 `
 
-export const WorkImg = styled.img`
-    width:10vw;
+export const FiapImg = styled.img`
+    width:12vw;
 
     @media only screen and (max-width:800px){
-        width:10vw;
+        width:20vw;
+        margin-bottom:1rem;
+    }
+
+`
+
+export const AluraImg = styled.img`
+    width:10vw;
+    margin:0.5rem 0;
+    border-radius:1rem;
+
+    @media only screen and (max-width:800px){
+        width:15vw;
     }
 
 `
@@ -82,9 +105,8 @@ export const Date = styled.h2`
 
     font-size:2rem;
 
-    @media only screen and (max-width:900px){
+    @media only screen and (max-width:800px){
         font-size:2rem;
-        margin-bottom:0;
     }
 
 `
@@ -103,7 +125,6 @@ export const ClickMe = styled.a`
     display:flex;
     align-items:center;
     justify-content:space-between;
-    margin-top:0.5rem;
 
     &:hover{
         background-color:#fff;

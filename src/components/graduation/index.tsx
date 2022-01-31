@@ -1,9 +1,11 @@
 import {
+  AluraImg,
   Angular,
   CardsContainer,
   CardsOrganize,
   ClickMe,
   Date,
+  FiapImg,
   GraduationContainer,
   GraduationText,
   Icons,
@@ -14,7 +16,6 @@ import {
   TechnologysTitle,
   Typescript,
   Vue,
-  WorkImg,
 } from "./Graduation";
 import Fiap from "../../assets/img/fiap.png";
 import Python from '../../assets/img/python.svg'
@@ -29,12 +30,12 @@ export function Graduation() {
       <CardsOrganize>
         <CardsContainer>
           <Date>2021 - 2022</Date>
-          <WorkImg src={Fiap} alt="Fiap" />
+          <FiapImg src={Fiap} alt="Fiap" />
         </CardsContainer>
 
         <CardsContainer>
           <Date>Certificates</Date>
-          <WorkImg src={Alura} alt="Alura" />
+          <AluraImg src={Alura} alt="Alura" />
           <ClickMe href=''>See Certificates</ClickMe>
         </CardsContainer>
         
